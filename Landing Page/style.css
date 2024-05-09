@@ -1,0 +1,128 @@
+.area1 {
+    display: flex;
+    padding: 10px 20px 5px 20px;
+    /* top right bottom left */
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.area2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px 50px;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-size: 4em;
+    /*4em   4 times bigger than the current size  */
+    padding: none;
+}
+
+h2 span {
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+button {
+    color: white;
+    background-color: #017143;
+    border-radius: 40px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.text-box {
+    width: 60%;
+
+}
+
+.image-box {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.image-box img {
+    height: 520px;
+    width: 400px;
+
+}
+
+.circle {
+    background-color: #017143;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(600px at right 800px);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+p {
+    margin-top: -16px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    margin-bottom: -100px;
+    transform: translateX(-50%);
+    display: flex;
+
+}
+
+.thumb li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    transition: 0.5s;
+
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+.socials{
+    position: absolute;
+    right: 30px;
+    top:300px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+}
+.socials li{
+    display: flex;
+    flex-direction: column;
